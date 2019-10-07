@@ -1,0 +1,59 @@
+// BREAKPOINTS
+// @include phone-medium {}
+@mixin phone-medium { @media only screen and (min-width: $phone-medium) { @content;}}
+@mixin phone-large { @media only screen and (min-width: $phone-large) { @content;}}
+@mixin phablet { @media only screen and (min-width: $phablet) { @content;}}
+@mixin tablet { @media only screen and (min-width: $tablet) { @content;}}
+@mixin tablet-large { @media only screen and (min-width: $tablet-large) { @content;}}
+@mixin desktop { @media only screen and (min-width: $desktop) { @content;}}
+@mixin desktop-medium { @media only screen and (min-width: $desktop-medium) { @content;}}
+@mixin desktop-large { @media only screen and (min-width: $desktop-large) { @content;}}
+
+// SET A REM FONT SIZE WITH A PIXEL FALLBACK
+//@include font-size(14px)
+@mixin fontsize($size) {
+    font-size: $size;
+    font-size: calcRem($size);
+}
+
+// TRANSITION
+// @include transition(color 0.3s ease-in-out);
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    -moz-transition: $args;
+    -ms-transition: $args;
+    -o-transition: $args;
+    transition: $args;
+}
+
+// ANIMATION AND KEYFRAMES
+// @include keyframes(slide-down) {}
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} { @content;}
+    @-moz-keyframes #{$animation-name} { @content;}  
+    @-ms-keyframes #{$animation-name} { @content;}
+    @-o-keyframes #{$animation-name} { @content;}  
+    @keyframes #{$animation-name} { @content;}
+}
+
+// @include animation('slide-down 5s 3'); {}
+@mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};      
+}
+
+// CLEARFIX
+// @extend %clearfix;
+%clearfix {
+    *zoom: 1;
+    &:before, &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
