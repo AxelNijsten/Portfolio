@@ -1,3 +1,50 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap");
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: #2D3436;
+  color: #EEEEEE;
+  margin: 0;
+}
+
+.intro {
+  font-size: 30px;
+  position: absolute;
+  top: 160px;
+  left: 10px;
+}
+.intro h1 {
+  margin: 0;
+}
+
+.navigation {
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  background-color: #202020;
+  height: 604px;
+  margin: 0;
+  padding: 0;
+  width: 550px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.container .navigation {
+  align-self: flex-end;
+}
+
+.button-8 {
+  color: black;
+  background-color: #00CEC9;
+  padding: 10px 15px;
+  border: 2px solid;
+  border-radius: 25px;
+  width: 160px;
+  border-color: #00CEC9;
+  font-size: 14px;
+}
 
 /*# sourceMappingURL=style.css.map */
