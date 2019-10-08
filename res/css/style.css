@@ -19,7 +19,7 @@ body {
 .navigation {
   text-align: center;
   font-size: 30px;
-  position: absolute;
+  position: relative;
   background-color: #202020;
   height: 604px;
   margin: 0;
@@ -31,9 +31,28 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  flex-wrap: wrap;
 }
 .container .navigation {
   align-self: flex-end;
+}
+.container .navigation div {
+  display: flex;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+}
+.container .navigation a {
+  text-decoration: none;
+  color: #EEEEEE;
+  padding: 10px;
+}
+.container .navigation a:visited {
+  color: #EEEEEE;
+}
+
+.profile-image img {
+  border-radius: 50%;
 }
 
 .button-8 {
@@ -45,6 +64,17 @@ body {
   width: 160px;
   border-color: #00CEC9;
   font-size: 14px;
+  font-weight: bold;
+}
+.button-8:hover {
+  background-color: aqua;
+  border-color: aqua;
+  cursor: pointer;
+}
+
+.divider {
+  text-align: center;
+  font-size: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
