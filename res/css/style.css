@@ -210,15 +210,19 @@ body {
   flex-direction: column;
   height: 500px;
   justify-content: center;
+  align-content: center;
 }
 
 .contact-text {
-  text-align: center;
-  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .contact-text p {
   margin: 0;
   font-size: 25px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .container-icons {
@@ -226,11 +230,11 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: flex-end;
-  height: 360px;
 }
 .container-icons i {
   font-size: 25px;
   color: #00CEC9;
+  padding-top: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */
