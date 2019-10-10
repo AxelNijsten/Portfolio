@@ -6,58 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="res/css/style.css">
     <title>Portfolio</title>
+   
 </head>
 <body>
-
-
     <div class="container">
         <div class="intro">
             <h1>Please explore</h1>
             <h1>and</h1>
             <h1>Discover.</h1>
             <br>
-            <a href="#works"><input id="works" class= "button-8" type="submit" value="projects" name= " "></a>
+            <a data-href="#works" class="goToSection"><input class= "button-8" type="submit" value="projects" name= " "></a>
         </div>  
-        
         <div class="navigation" data-spy="scroll" data-target="#works">
-            <a href="#contact">Contact</a>
-            <a href="#skills">Skills</a>
-            <a href="#CV">CV</a>
-                <div class="profile-image">
-                    <img src="res/img/MokeyMokey-DAR.png">
-                </div>
-        </div>
-            
+        
+            <a data-href="#contact" class="goToSection">Contact</a>
+            <a data-href="#skills" class="goToSection">Skills</a>
+            <a data-href="#works" class="goToSection">Works</a>
+        
+            <div class="profile-image">
+                <img src="res/img/MokeyMokey-DAR.png">
+            </div>
         </div>
         <div class="divider">
                 <p>HTML - CSS - SCSS - JS</p>
         </div>
         <section id="works">
-        <div class="works">
-            <h1>Works</h1>
-            <div class="works-sub1">
-                <img src="res/img/minesweeper.png">
-                <p>This is an interactible minesweeper box wich i made<br>
-                                                    using flexbox.</p>
-            </div>
-
-            <div class="works-sub2">
-                    <p>This is a chessboard wich i configured together
-                            <br>using html and css. This was done with grid.</p>
-                <img src="res/img/chess.png">
-                
-            </div>
-
-            <div class="works-sub3">
+            <div class="works">
+                <h1>Works</h1>
+                <div class="works-sub1">
                     <img src="res/img/minesweeper.png">
                     <p>This is an interactible minesweeper box wich i made<br>
                                                         using flexbox.</p>
+                </div>
+
+                <div class="works-sub2">
+                        <p>This is a chessboard wich i configured together
+                                <br>using html and css. This was done with grid.</p>
+                    <img src="res/img/chess.png">
+                    
+                </div>
+
+                <div class="works-sub3">
+                        <img src="res/img/minesweeper.png">
+                        <p>This is an interactible minesweeper box wich i made<br>
+                                                            using flexbox.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
         <section id="skills">
             <div class="about">
-                <h1 class="about-title">What I do</h1>
+                <h1 class="about-title">What I do (skills)</h1>
             
                 <div class="about-tags">&lt;head&gt;</div>
                 <div class="about-tags">&lt;/head&gt;</div>
@@ -70,10 +68,10 @@
                 <div class="about-tags">&lt;/body&gt;</div>
             </div>
         </section>
-
         <section id="contact">
             <div class="contact">
-                    <div class="contact-text">
+                    <div class="contact-text"> 
+                        
                            <p>If you are interested in what I <br>do you can contact me on the <br>following.</p>
                     </div>
                 <div class="container-icons">
@@ -84,11 +82,10 @@
                 </div>
             </div>
         </section>
-
- 
-        
-        
-<script src="res/js/scripts.js"></script>
-
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="res/js/scripts.js"></script>
 </body>
 </html>
