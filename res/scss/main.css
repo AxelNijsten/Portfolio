@@ -1,7 +1,6 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Red+Hat+Display&display=swap");
 body {
-  font-family: "Red Hat Display", sans-serif;
+  font-family: 'Red Hat Display', sans-serif;
   background-color: #2D3436;
   color: #EEEEEE;
   margin: 0;
@@ -13,6 +12,7 @@ body {
   top: 160px;
   left: 10px;
 }
+
 .intro h1 {
   margin-left: 20px;
   margin-top: 0;
@@ -31,30 +31,48 @@ body {
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 0;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 .container .navigation {
-  align-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   border-bottom-left-radius: 25%;
 }
+
 .container .navigation div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 500px;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 20px;
 }
+
 .container .navigation a {
   text-decoration: none;
   color: #EEEEEE;
   padding: 20px 10px 0px;
 }
+
 .container .navigation a:visited {
   color: #EEEEEE;
 }
+
 .container .navigation a:hover {
   cursor: pointer;
   color: aqua;
@@ -64,6 +82,7 @@ body {
 .profile-image img {
   border-radius: 50%;
 }
+
 .profile-image img:hover {
   border: #00CEC9 solid 2px;
 }
@@ -80,6 +99,7 @@ body {
   font-weight: bold;
   margin-left: 25px;
 }
+
 .button-8:hover {
   background-color: aqua;
   border-color: aqua;
@@ -94,15 +114,22 @@ body {
 
 .works {
   text-align: center;
-  justify-content: left;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   background-color: #202020;
 }
 
 .works-sub1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: left;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
+
 .works-sub1 img {
   height: 150px;
   width: 150px;
@@ -110,21 +137,28 @@ body {
   margin-left: 100px;
   margin-bottom: 20px;
 }
+
 .works-sub1 p {
   padding: 10px;
   font-size: 25px;
 }
 
 .works-sub2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: left;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
+
 .works-sub2 img {
   height: 150px;
   width: 150px;
   margin-right: 100px;
 }
+
 .works-sub2 p {
   padding: 10px;
   font-size: 25px;
@@ -132,10 +166,15 @@ body {
 }
 
 .works-sub3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: left;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
+
 .works-sub3 img {
   height: 150px;
   width: 150px;
@@ -143,16 +182,23 @@ body {
   margin-top: 20px;
   margin-bottom: 40px;
 }
+
 .works-sub3 p {
   padding: 10px;
   font-size: 25px;
 }
 
 .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #2D3436;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 .about h1 {
   text-align: left;
   margin-left: 30px;
@@ -175,32 +221,59 @@ body {
 }
 
 .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #202020;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 500px;
-  justify-content: center;
-  align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .contact-text {
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .contact-text p {
   margin: 0;
   font-size: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .container-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
+
 .container-icons i {
   font-size: 25px;
   color: #00CEC9;
@@ -208,16 +281,17 @@ body {
 }
 
 @font-face {
-  font-family: "icomoon";
+  font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?88kz9k");
   src: url("../fonts/icomoon.eot?88kz9k#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?88kz9k") format("truetype"), url("../fonts/icomoon.woff?88kz9k") format("woff"), url("../fonts/icomoon.svg?88kz9k#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
-[class^=icon-], [class*=" icon-"] {
+
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
+  font-family: 'icomoon' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -230,19 +304,19 @@ body {
 }
 
 .icon-envelop:before {
-  content: "";
+  content: "\e945";
 }
 
 .icon-facebook:before {
-  content: "";
+  content: "\ea90";
 }
 
 .icon-instagram:before {
-  content: "";
+  content: "\ea92";
 }
 
 .icon-linkedin:before {
-  content: "";
+  content: "\eaca";
 }
 
 .body-cv {
@@ -250,26 +324,14 @@ body {
 }
 
 .cv-p {
-  width: 200px;
-  height: 200px;
-  background: #f06d06;
-  position: relative;
-  border: 5px solid blue;
-  margin: 20px;
-}
-.cv-p:after {
-  content: "";
-  position: absolute;
-  top: -15px;
-  left: -15px;
-  right: -15px;
-  bottom: -15px;
-  background: orange;
-  z-index: -1;
+  display: inline-block;
+  color: black;
+  font-size: 200px;
+  border: 3px solid red;
+  margin: 150px auto;
 }
 
 .container-cv {
   text-align: center;
 }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
