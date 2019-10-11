@@ -34,12 +34,8 @@
     .cv-content{
         width: 700px;
         h1, p{
-            margin: 10px 20px;
+            margin: 8px 40px;
         }
-    }
-
-    .art-form{
-        
     }
 
     .art-tittle{
@@ -47,7 +43,21 @@
         text-decoration: underline;
     }
    
+.back{
+        
+        margin:10px 10px;
+    
+    &:visited{
+    color: white;
+    text-decoration: none;
+    }
 
+    &:hover{
+        color: #00CEC9;
+        text-decoration: underline;
+    }
+
+}
 
 
 

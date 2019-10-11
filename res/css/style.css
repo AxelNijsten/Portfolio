@@ -283,11 +283,23 @@ body {
   width: 700px;
 }
 .cv-content h1, .cv-content p {
-  margin: 10px 20px;
+  margin: 8px 40px;
 }
 
 .art-tittle {
   font-weight: bolder;
+  text-decoration: underline;
+}
+
+.back {
+  margin: 10px 10px;
+}
+.back:visited {
+  color: white;
+  text-decoration: none;
+}
+.back:hover {
+  color: #00CEC9;
   text-decoration: underline;
 }
 
