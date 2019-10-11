@@ -279,4 +279,16 @@ body {
   border: #00CEC9 solid 2px;
 }
 
+.cv-content {
+  width: 700px;
+}
+.cv-content h1, .cv-content p {
+  margin: 10px 20px;
+}
+
+.art-tittle {
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
 /*# sourceMappingURL=style.css.map */
