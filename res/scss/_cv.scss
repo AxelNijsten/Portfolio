@@ -1,18 +1,42 @@
 
-
 .body-cv{
-    background-color: white;
+    display: flex;
+    flex-direction: row;
 }
-
-.cv-p{
-    display: inline-block;
-    color: black;
-    font-size: 200px;
-    border: 3px solid red;
-    margin: 150px auto;
-    
-}
-
 .container-cv{
-    text-align: center;
+    width: 300px;
+    background-color: #202020;
+    height: 604px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    p{
+        margin: 0;
+    }
+
+    h1{
+        font-size: 25px;
+    }
 }
+
+
+.cv-image img{
+    border-radius: 50%;
+    align-self: center;
+    margin-top: 20px;
+    &:hover{
+        border: #00CEC9 solid 2px;
+    }
+    }
+
+    .cv-content{
+
+    }
+
+   
+
+
+
+
+
