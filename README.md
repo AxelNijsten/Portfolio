@@ -1,3 +1,7 @@
 # Portfolio
 
 # Please click [here](https://axelnijsten.github.io/Portfolio/) to see what I've got in store 
+
+# -Add more smooth sections
+# -Whange the projects section so it looks nicer
+# -Work on responsiveness
